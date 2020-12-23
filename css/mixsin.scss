@@ -1,0 +1,44 @@
+
+
+
+
+@mixin beforemixsin ($bgimg, $bgcolor, $bgsize, $bgpos: center, $width:auto, $height:auto, $top:0, $left:0,
+$right:0, $bottom:0) {
+  content: "";
+  background-image:$bgimg;
+  background-color: $bgcolor;
+  background-size: $bgsize;
+  background-position:$bgpos;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  width: $width;
+  height: $height;
+  background-repeat: no-repeat;
+  margin: auto;
+  position: absolute;
+}
+
+@mixin backgroundimg ($bgimg, $bgcolor:transparent, $bgsize:auto, $bgpos:center) {
+  background-image:$bgimg;
+  background-color: $bgcolor;
+  background-size: $bgsize;
+  background-position:$bgpos;
+  background-repeat: no-repeat;
+}
+
+%transition {
+  transition: all ease 0.5s;
+
+}
+
+@mixin textstyle ($fontsize, $fontstyle, $fontweight, $lineheight, $color, $letterspacing) {
+  font-size: $fontsize;
+  font-style: $fontstyle;
+  font-weight: $fontweight;
+  line-height: $lineheight;
+  color: $color;
+  letter-spacing: $letterspacing;
+  
+}
